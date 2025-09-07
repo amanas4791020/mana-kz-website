@@ -1,0 +1,24 @@
+{
+  "plumbing": [
+    {"id": "vyzov-santehnika", "title": "Вызов сантехника", "description": "Экстренный выезд квалифицированного специалиста для диагностики и устранения сантехнических неисправностей любой сложности. Доступен круглосуточно.", "price": "от 3500 тг", "icon": "wrench", "category": "emergency"},
+    {"id": "ustanovka-smesitelya", "title": "Установка смесителя", "description": "Профессиональная установка смесителей любой сложности с гарантией качества.", "price": "от 5000 тг", "icon": "droplet", "category": "installation"},
+    {"id": "remont-smesitelya", "title": "Ремонт смесителя", "description": "Качественный ремонт шаровых и вентильных смесителей с заменой комплектующих.", "price": "от 3500 тг", "icon": "settings", "category": "repair"},
+    {"id": "remont-dushevih-kabin", "title": "Ремонт душевых кабин", "description": "Устранение неисправностей, замена комплектующих, герметизация душевых кабин.", "price": "от 6000 тг", "icon": "home", "category": "repair"},
+    {"id": "ustanovka-vanny", "title": "Установка ванны", "description": "Демонтаж старой и установка новой ванны любого типа - чугунной, акриловой, стальной.", "price": "от 12000 тг", "icon": "container", "category": "installation"},
+    {"id": "ustanovka-unitaza", "title": "Установка унитаза", "description": "Демонтаж, установка и подключение унитаза к канализационной системе.", "price": "от 8000 тг", "icon": "archive", "category": "installation"}
+  ],
+  "electrical": [
+    {"id": "uslugi-elektrika", "title": "Услуги электрика", "description": "Полный спектр электромонтажных работ любой сложности в квартирах и домах.", "price": "от 2500 тг", "icon": "zap", "category": "general"},
+    {"id": "remont-provodki", "title": "Устранение неисправностей в электропроводке", "description": "Диагностика и ремонт электропроводки, поиск и устранение коротких замыканий.", "price": "от 4000 тг", "icon": "activity", "category": "repair"},
+    {"id": "ustanovka-lyustry", "title": "Установка и ремонт люстры", "description": "Монтаж, демонтаж, ремонт люстр, бра и других осветительных приборов.", "price": "от 3000 тг", "icon": "sun", "category": "installation"},
+    {"id": "ustanovka-rozetok", "title": "Установка выключателей и розеток", "description": "Монтаж, замена, перенос розеток и выключателей. Установка влагозащищенных розеток.", "price": "от 2000 тг", "icon": "power", "category": "installation"}
+  ],
+  "gas_heating": [
+    {"id": "ustanovka-gazovogo-kotla", "title": "Установка газового котла", "description": "Профессиональный монтаж газовых котлов отопления с соблюдением всех норм безопасности.", "price": "от 25000 тг", "icon": "flame", "category": "installation"},
+    {"id": "ustanovka-gazovoi-plity", "title": "Установка газовой плиты", "description": "Подключение газовых плит к магистральному газу и баллонному газу.", "price": "от 8000 тг", "icon": "square", "category": "installation"}
+  ],
+  "appliances": [
+    {"id": "remont-boilera", "title": "Ремонт бойлера", "description": "Ремонт электрических и газовых водонагревателей, замена ТЭНов, очистка от накипи.", "price": "от 5000 тг", "icon": "battery", "category": "repair"},
+    {"id": "ustanovka-filtra-vody", "title": "Установка фильтра для воды", "description": "Монтаж систем водоочистки, фильтров обратного осмоса, проточных фильтров.", "price": "от 5500 тг", "icon": "filter", "category": "installation"}
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "plumbing": {
+    "installation": {
+      "toilet": { "min": 16800, "max": 18000, "unit": "шт" },
+      "bathtub_simple": { "min": 21000, "max": 21000, "unit": "шт" },
+      "bathtub_plastic": { "min": 16800, "max": 30000, "unit": "шт" },
+      "bathtub_hydro": { "min": 31500, "max": 31500, "unit": "шт" },
+      "shower_cabin": { "min": 33600, "max": 45000, "unit": "шт" },
+      "bidet": { "min": 16800, "max": 20000, "unit": "шт" },
+      "mixer": { "min": 5250, "max": 6700, "unit": "шт" },
+      "water_heater": { "min": 10500, "max": 38000, "unit": "шт" },
+      "water_meter": { "min": 5250, "max": 12000, "unit": "шт" },
+      "towel_dryer": { "min": 15000, "max": 19000, "unit": "шт" }
+    },
+    "pipes": {
+      "water_pipe": { "min": 500, "max": 3800, "unit": "м.п." },
+      "sewer_pipe": { "min": 1000, "max": 7000, "unit": "м.п." }
+    }
+  },
+  "electrical": {
+    "basic": {
+      "socket_switch": { "min": 900, "max": 3000, "unit": "шт" },
+      "outlet_box": { "min": 800, "max": 3500, "unit": "шт" },
+      "bulb_replacement": { "min": 200, "max": 500, "unit": "шт" },
+      "spot_light": { "min": 700, "max": 1500, "unit": "шт" }
+    },
+    "lighting": {
+      "chandelier": { "min": 1200, "max": 6000, "unit": "шт" },
+      "wall_light": { "min": 1000, "max": 4800, "unit": "шт" },
+      "spot_light_install": { "min": 2500, "max": 2500, "unit": "шт" },
+      "chandelier_assembly": { "min": 1200, "max": 3000, "unit": "шт" }
+    },
+    "complex": {
+      "wire_routing_concrete": { "min": 1120, "max": 3200, "unit": "м.п." },
+      "wire_routing_brick": { "min": 800, "max": 2500, "unit": "м.п." },
+      "wire_routing_drywall": { "min": 1500, "max": 1500, "unit": "м.п." },
+      "electrical_panel": { "min": 6500, "max": 58000, "unit": "шт" },
+      "wiring_installation": { "min": 300, "max": 1300, "unit": "м.п." }
+    }
+  },
+  "furniture": {
+    "cabinet": {
+      "dresser": { "min": 5000, "max": 10000, "unit": "шт" },
+      "wardrobe_standard": { "min": 6400, "max": 20000, "unit": "шт" },
+      "wardrobe_sliding": { "min": 10000, "max": 30000, "unit": "шт" },
+      "bed": { "min": 10000, "max": 20000, "unit": "шт" }
+    },
+    "kitchen": {
+      "kitchen_set": { "min": 15000, "max": 40000, "unit": "комп." },
+      "kitchen_full": { "min": 30000, "max": 80000, "unit": "комп." },
+      "cooktop": { "min": 10000, "max": 15000, "unit": "шт" },
+      "sink": { "min": 10000, "max": 15000, "unit": "шт" }
+    },
+    "office": {
+      "desk": { "min": 5000, "max": 12000, "unit": "шт" },
+      "office_furniture": { "min": 20000, "max": 50000, "unit": "комп." },
+      "hallway": { "min": 20000, "max": 40000, "unit": "комп." }
+    },
+    "hourly_rate": { "min": 4500, "max": 5000, "unit": "час" }
+  },
+  "minor_repairs": {
+    "hourly": {
+      "handyman": { "min": 2000, "max": 3000, "unit": "час" },
+      "husband_hour": { "min": 2500, "max": 4000, "unit": "час" },
+      "private_master": { "min": 3000, "max": 10000, "unit": "работа" }
+    },
+    "specific": {
+      "drilling": { "min": 1000, "max": 2000, "unit": "отверстие" },
+      "bracket": { "min": 1800, "max": 3000, "unit": "шт" },
+      "mirror_hanging": { "min": 10, "max": 50, "unit": "шт" },
+      "dryer_install": { "min": 75, "max": 200, "unit": "шт" },
+      "hooks_hangers": { "min": 10, "max": 100, "unit": "шт" },
+      "curtain_rod": { "min": 4600, "max": 8000, "unit": "шт" }
+    }
+  },
+  "districts": {
+    "center": { "multiplier": 1.0, "name": "Центр" },
+    "medeu": { "multiplier": 1.1, "name": "Медеуский район" },
+    "bostandyk": { "multiplier": 1.05, "name": "Бостандыкский район" },
+    "almaly": { "multiplier": 1.0, "name": "Алмалинский район" },
+    "auezov": { "multiplier": 1.1, "name": "Ауэзовский район" },
+    "turksib": { "multiplier": 1.15, "name": "Турксибский район" },
+    "zhetysu": { "multiplier": 1.1, "name": "Жетысуский район" },
+    "nauryzbay": { "multiplier": 1.2, "name": "Наурызбайский район" }
+  },
+  "urgency": {
+    "normal": { "multiplier": 1.0, "name": "Обычная (в течение дня)" },
+    "urgent": { "multiplier": 1.3, "name": "Срочная (в течение 2-4 часов)" },
+    "emergency": { "multiplier": 1.5, "name": "Аварийная (в течение часа)" }
+  },
+  "complexity": {
+    "simple": { "multiplier": 1.0, "name": "Простая" },
+    "medium": { "multiplier": 1.2, "name": "Средняя сложность" },
+    "complex": { "multiplier": 1.5, "name": "Сложная" }
+  }
+}
