@@ -1,26 +1,59 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import path from "path"
+import react from "@vitejs/plugin-react"
+import { defineConfig } from "vite"
+import sourceIdentifierPlugin from 'vite-plugin-source-identifier'
 
-// https://vitejs.dev/config/
+const isProd = process.env.BUILD_MODE === 'prod'
+
 export default defineConfig({
-  plugins: [react()],
-  base: './', // Правильный базовый путь для GitHub Pages с кастомным доменом
+  base: './', // Критически важно для GitHub Pages с кастомным доменом!
+  plugins: [
+    react(), 
+    sourceIdentifierPlugin({
+      enabled: !isProd,
+      attributePrefix: 'data-matrix',
+      includeProps: true,
+    })
+  ],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
   build: {
-    outDir: 'dist',
-    assetsDir: 'assets',
-    emptyOutDir: true,
-    sourcemap: false,
+    // Оптимизация для production
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: isProd,
+        drop_debugger: isProd,
+      },
+    },
+    // Разделение кода для лучшей производительности
     rollupOptions: {
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom'],
-          ui: ['@radix-ui/react-dialog', '@radix-ui/react-select'],
-        },
-      },
+          router: ['react-router-dom'],
+          icons: ['lucide-react'],
+          ui: ['@radix-ui/react-accordion', '@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu']
+        }
+      }
     },
+    // Оптимизация размера чанков
+    chunkSizeWarningLimit: 500,
+    // Включаем source maps только для dev
+    sourcemap: !isProd,
   },
+  // Оптимизация для разработки
   server: {
-    port: 3000,
-    open: true,
+    hmr: {
+      overlay: false
+    }
   },
+  // Оптимизация CSS
+  css: {
+    devSourcemap: !isProd
+  }
 })
+
