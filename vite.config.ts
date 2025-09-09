@@ -5,7 +5,7 @@ import { defineConfig } from "vite"
 const isProd = process.env.BUILD_MODE === 'prod'
 
 export default defineConfig({
-  base: '/', // Custom domain GitHub Pages base path
+  base: '/mana-kz-website/', // GitHub Pages repository path
   plugins: [
     react()
   ],
