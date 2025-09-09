@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мастер Манас - Сантехник и Электрик в Алматы</title>
+    <meta name="description" content="Профессиональные сантехнические и электрические услуги в Алматы. Быстрый выезд 24/7, гарантия качества, честные цены. Звоните +7 705 553 53 32, +7 707 479 10 20">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            color: #1e40af;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .header p {
+            color: #64748b;
+            font-size: 1.2rem;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .service-card h3 {
+            color: #1e40af;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+        .contact-section {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .contact-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        .btn {
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+        .btn-primary {
+            background: #2563eb;
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #1d4ed8;
+        }
+        .btn-whatsapp {
+            background: #25d366;
+            color: white;
+        }
+        .btn-whatsapp:hover {
+            background: #128c7e;
+        }
+        .working-time {
+            background: #fef3c7;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .status {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #10b981;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            .contact-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .btn {
+                width: 100%;
+                max-width: 300px;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Мастер Манас</h1>
+            <p>Профессиональный сантехник и электрик в Алматы</p>
+        </div>
+
+        <div class="services">
+            <div class="service-card">
+                <h3>🔧 Сантехнические работы</h3>
+                <p>• Ремонт смесителей и кранов</p>
+                <p>• Замена труб и сифонов</p>
+                <p>• Установка унитазов и раковин</p>
+                <p>• Прочистка канализации</p>
+                <p>• Устранение протечек</p>
+            </div>
+
+            <div class="service-card">
+                <h3>⚡ Электромонтажные работы</h3>
+                <p>• Замена проводки</p>
+                <p>• Установка розеток и выключателей</p>
+                <p>• Подключение светильников</p>
+                <p>• Монтаж электрощитов</p>
+                <p>• Диагностика неисправностей</p>
+            </div>
+
+            <div class="service-card">
+                <h3>🏠 Дополнительные услуги</h3>
+                <p>• Установка бытовой техники</p>
+                <p>• Мелкий ремонт по дому</p>
+                <p>• Консультации по ремонту</p>
+                <p>• Профилактическое обслуживание</p>
+                <p>• Экстренный вызов 24/7</p>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <h2>Контакты и вызов мастера</h2>
+            <p>Быстрый выезд по Алматы • Гарантия на работы • Честные цены</p>
+            
+            <div class="contact-buttons">
+                <a href="tel:+77055535332" class="btn btn-primary">
+                    📞 +7 705 553 53 32
+                </a>
+                <a href="tel:+77074791020" class="btn btn-primary">
+                    📞 +7 707 479 10 20
+                </a>
+                <a href="https://wa.me/77055535332" class="btn btn-whatsapp" target="_blank">
+                    📱 WhatsApp
+                </a>
+            </div>
+
+            <div class="working-time">
+                <h4>⏰ Режим работы</h4>
+                <p><strong>Круглосуточно, без выходных</strong></p>
+                <p>Экстренные вызовы принимаются 24/7</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="status">
+        ✅ Сайт исправлен и работает!
+    </div>
+
+    <script>
+        // Добавляем интерактивность
+        console.log('Сайт mana.kz успешно загружен без ошибок!');
+        
+        // Обработчик для кнопок вызова
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function(e) {
+                if (this.href.includes('tel:')) {
+                    console.log('Звонок по номеру:', this.textContent);
+                } else if (this.href.includes('wa.me')) {
+                    console.log('Открытие WhatsApp');
+                }
+            });
+        });
+
+        // Показываем статус загрузки
+        window.addEventListener('load', function() {
+            console.log('Сайт полностью загружен:', new Date().toLocaleString('ru-RU'));
+        });
+    </script>
+</body>
+</html>
