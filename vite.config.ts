@@ -6,6 +6,8 @@ import sourceIdentifierPlugin from 'vite-plugin-source-identifier'
 const isProd = process.env.BUILD_MODE === 'prod'
 
 export default defineConfig({
+  // Важно: для кастомного домена на GitHub Pages используем относительные пути
+  base: './',
   plugins: [
     react(), 
     sourceIdentifierPlugin({
@@ -55,4 +57,3 @@ export default defineConfig({
     devSourcemap: !isProd
   }
 })
-
