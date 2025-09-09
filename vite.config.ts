@@ -15,10 +15,39 @@ export default defineConfig({
     },
   },
   build: {
-    // Базовая минификация без дополнительных настроек
-    minify: 'esbuild',
-    // Убираем source maps для production
-    sourcemap: false,
+    // Оптимизация для production
+    minify: 'terser',
+    terserOptions: {
+      compress: {
+        drop_console: isProd,
+        drop_debugger: isProd,
+      },
+    },
+    // Разделение кода для лучшей производительности
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          router: ['react-router-dom'],
+          icons: ['lucide-react'],
+          ui: ['@radix-ui/react-accordion', '@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu']
+        }
+      }
+    },
+    // Оптимизация размера чанков
+    chunkSizeWarningLimit: 500,
+    // Включаем source maps только для dev
+    sourcemap: !isProd,
+  },
+  // Оптимизация для разработки
+  server: {
+    hmr: {
+      overlay: false
+    }
+  },
+  // Оптимизация CSS
+  css: {
+    devSourcemap: !isProd
   }
 })
 
